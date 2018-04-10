@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-    abstract class Vehiculo
+    public abstract class Vehiculo
     {
         String Nombre;
         String Marca;

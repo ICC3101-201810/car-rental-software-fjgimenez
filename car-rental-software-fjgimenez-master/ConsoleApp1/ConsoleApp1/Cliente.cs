@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-    abstract class Cliente
+    public abstract class Cliente
     {
         String Nombre;
         String RUT;
@@ -14,5 +14,5 @@ using System.Threading.Tasks;
     CrearCliente()
     {
         Cliente c1 = new Cliente(Console.WriteLine("Nombre de Cliente a ingresar"),
-             Console.WriteLine("RUT de Cliente a ingresar"));
+            Console.WriteLine("RUT de Cliente a ingresar"));
     }

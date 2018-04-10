@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-    class Arriendo
+    abstract class Arriendo
     {
         int numero;
         DateTime dat = DateTime.Now;
