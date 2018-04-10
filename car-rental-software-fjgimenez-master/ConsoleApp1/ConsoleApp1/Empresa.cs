@@ -13,8 +13,8 @@ namespace ConsoleApp1
     }
     AgregarEmpresa()
     {
-       Empresa e1 = new Empresa(Console.WriteLine("Nombre de Empresa a ingresar"), Console.WriteLine("RUT de Empresa a ingresar"),
-               Console.WriteLine("Tipo de Empresa a Ingresar (Empresa, Organización u Institución)"), 
-               Console.WriteLine("Estado de Autorización (Autorizada, Rechazada, Pendiente)"));
+        base.CrearCliente();
+        Console.WriteLine("Tipo de Empresa a Ingresar (Empresa, Organización u Institución)"), 
+        Console.WriteLine("Estado de Autorización (Autorizada, Rechazada, Pendiente)"));
     }
 }

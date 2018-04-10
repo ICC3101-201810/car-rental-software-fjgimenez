@@ -4,22 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1
-{
-    class Cliente
+    abstract class Cliente
     {
         String Nombre;
         String RUT;
         String Tipo;
     }
 
-    CrearCliente(Persona, Empresa)
+    CrearCliente()
     {
-       if(Cliente.Tipo==Persona){
-            Persona p1= new Persona();
-}
-       else{
-            Empresa e1=new Empresa();
-}
+        Cliente c1 = new Cliente(Console.WriteLine("Nombre de Cliente a ingresar"),
+             Console.WriteLine("RUT de Cliente a ingresar"));
     }
-}

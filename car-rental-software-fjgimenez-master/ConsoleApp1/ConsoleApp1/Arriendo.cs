@@ -4,14 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1
-{
     class Arriendo
     {
         int numero;
         DateTime dat = DateTime.Now;
     }
-    DatosArriendo(Persona, Empresa, Vehiculo, Accesorio, Sucursal)
+    DatosArriendo()
     {
        Console.WriteLine("Arriendo Realizado a las" + dat);
 
@@ -28,22 +26,21 @@ namespace ConsoleApp1
         Console.WriteLine("\n Accesorios agregados" + Accesorio);
     }
 
-    Arrendar(Vehiculo)
+    Arrendar()
     {
         Console.WriteLine("Hola, bienvenido a Arrienda Tu Auto. Ingresa Los Datos Personales Pedidos.");
         Console.WriteLine("Datos Ingresados Correctamente! Elige tu vehículo");
         Console.WriteLine("Vehículo Seleccionado Exitosamente! Elige los Accesorios que desees");
     }
 
-    AgregarAccesorios(Accesorio)
+    AgregarAccesorios()
     {
         Console.WriteLine("Accesorios Seleccionados Exitosamente! El total es de" + PrecioTotal + 
             "Elige medio de pago");
         Console.WriteLine("Pago realizado con Exito! Resumen de su arriendo:" + DatosArriendo);
     }
 
-     PrecioTotal(Vehiculo, Accesorio)
+     PrecioTotal()
     {
         Arrendar.get(Precio) + AgregarAccesorios.get(Precio); 
     }
-}

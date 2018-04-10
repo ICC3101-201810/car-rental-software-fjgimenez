@@ -4,11 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1
-{
+
     class Accesorio
     {
-        String Tipo;
+        String Nombre;
+        String SKU;
+        String Descripcion;
+        int Stock;
     }
 
     CrearAccesorio()
@@ -16,4 +18,3 @@ namespace ConsoleApp1
         Accesorio a1 = new Accesorio(Console.WriteLine("Nombre de Accesorio a ingresar"), Console.WriteLine("SKU de Accesorio a ingresar"),
                Console.WriteLine("Precio de Accesorio a Ingresar"));
     }
-}
