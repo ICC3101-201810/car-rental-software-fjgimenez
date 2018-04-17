@@ -28,7 +28,7 @@ namespace ConsoleApp1
     public VerSucursales(string Nombre)
     {
         Console.WriteLine("Seleccione Sucursal:");
-        SucursalesCreadas.Nombre;
+        SucursalesCreadas.get(Nombre);
         string SucursalElegida = Console.ReadLine();
     }
 }

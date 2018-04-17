@@ -12,6 +12,7 @@ namespace ConsoleApp1
         string SKU;
         string Descripcion;
         int Stock;
+        string Precio;
         public List<Accesorio> AccesoriosCreados;
     }
 
@@ -26,7 +27,15 @@ namespace ConsoleApp1
         string Descripcion = Console.ReadLine();
         Console.WriteLine("Stock");
         int Stock = Console.ReadLine();
+        Console.WriteLine("Precio");
+        string Precio = Console.ReadLine();
 
-        AccesoriosCreados.Add(new Accesorio(Nombre, SKU, Descripcion, Stock));
+        AccesoriosCreados.Add(new Accesorio(Nombre, SKU, Descripcion, Stock, Precio));
+    }
+    public VerAccesorios(string Nombre, string SKU,string Descripcion,int Stock, string Precio)
+    {
+        Console.WriteLine("Seleccione Accesorio:");
+        AccesoriosCreados.Nombre;
+        string AccesorioElegido = Console.ReadLine();
     }
     }

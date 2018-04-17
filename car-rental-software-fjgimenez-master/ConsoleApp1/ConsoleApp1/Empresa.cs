@@ -12,6 +12,7 @@ namespace ConsoleApp1
         string Autorizacion;
         public List<Empresa> EmpresasAgregadas;
     }
+
     AgregarEmpresa()
     {
         base.CrearCliente();
@@ -23,5 +24,12 @@ namespace ConsoleApp1
         {
             EmpresasAgregadas.Add(new Empresa(Tipo,Autorizacion));
         }
+    }
+
+    public VerEmpresas()
+    {
+        Console.WriteLine("Seleccione Empresa:");
+        EmpresasCreadas;
+        string EmpresaElegida = Console.ReadLine();
     }
 }

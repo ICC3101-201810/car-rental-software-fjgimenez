@@ -22,4 +22,11 @@ namespace ConsoleApp1
             PersonasAgregadas.Add(new Persona(ClaseLicencia));
         }
     }
+
+    public VerPersonas()
+    {
+        Console.WriteLine("Seleccione Persona:");
+        PersonasCreadas;
+        string PersonaElegida = Console.ReadLine();
+    }
 }

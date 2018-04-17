@@ -13,7 +13,15 @@ namespace ConsoleApp1
                 BusesCreados.Add(new Bus(Marca, Modelo, Patente, Tipo, Año, Precio));
             }
         }
-        ArrendarBus()
+
+        public VerBuses()
+        {
+            Console.WriteLine("Seleccione Bus:");
+            BusesCreados;
+            string BusElegido = Console.ReadLine();
+        }
+
+       public ArrendarBus()
         {
             if (Cliente.Tipo == "Empresa" & Empresa.Autorizacion == "Aprobada" & Empresa.Tipo == "Organizacion")
             {

@@ -14,7 +14,14 @@ namespace ConsoleApp1
             }
         }
 
-        ArrendarAuto()
+        public VerAutos()
+        {
+            Console.WriteLine("Seleccione Auto:");
+            AutosCreados;
+            string AutoElegido = Console.ReadLine();
+        }
+
+        public ArrendarAuto()
         {
             if (Persona.ClaseLicencia == "Sin Licencia")
             {

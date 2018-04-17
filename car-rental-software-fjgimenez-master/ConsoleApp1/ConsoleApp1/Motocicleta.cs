@@ -13,6 +13,13 @@ namespace ConsoleApp1
             }
         }
 
+        public VerMotocicletas()
+        {
+            Console.WriteLine("Seleccione Motocicleta:");
+            MotocicletasCreadas;
+            string MotocicletaElegida = Console.ReadLine();
+        }
+
         ArrendarMotocicleta()
         {
             if (Persona.ClaseLicencia == "C")

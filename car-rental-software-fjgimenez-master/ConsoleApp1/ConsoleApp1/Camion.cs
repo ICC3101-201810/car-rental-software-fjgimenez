@@ -15,7 +15,14 @@ namespace ConsoleApp1
             }
         }
 
-        ArrendarCamion()
+        public VerCamiones()
+        {
+            Console.WriteLine("Seleccione Camion:");
+            CamionesCreados;
+            string CamionElegido = Console.ReadLine();
+        }
+
+        public ArrendarCamion()
         {
             if (Cliente.Tipo == "Persona" & Persona.ClaseLicencia == "A4")
             {

@@ -38,15 +38,8 @@ namespace ConsoleApp1
         Console.WriteLine("Vehículo Seleccionado Exitosamente! Elige los Accesorios que desees");
     }
 
-    AgregarAccesorios()
-    {
-        Console.WriteLine("Accesorios Seleccionados Exitosamente! El total es de" + PrecioTotal +
-            "Elige medio de pago");
-        Console.WriteLine("Pago realizado con Exito! Resumen de su arriendo:" + DatosArriendo);
-    }
-
     PrecioTotal()
     {
-        Arrendar.get(Precio) + AgregarAccesorios.get(Precio);
+        Vehiculo.get(Precio) + Accesorio.get(Precio);
     }
 }
