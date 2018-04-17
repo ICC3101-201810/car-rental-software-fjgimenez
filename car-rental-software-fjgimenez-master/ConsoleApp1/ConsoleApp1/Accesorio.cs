@@ -4,17 +4,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
+namespace ConsoleApp1
+{
     class Accesorio
     {
-        String Nombre;
-        String SKU;
-        String Descripcion;
+        string Nombre;
+        string SKU;
+        string Descripcion;
         int Stock;
+        public List<Accesorio> AccesoriosCreados;
     }
 
-    CrearAccesorio()
+    public CrearAccesorio()
     {
-        Accesorio a1 = new Accesorio(Console.WriteLine("Nombre de Accesorio a ingresar"), Console.WriteLine("SKU de Accesorio a ingresar"),
-               Console.WriteLine("Precio de Accesorio a Ingresar"));
+        Console.WriteLine("Necesitamos los siguientes datos:");
+        Console.WriteLine("Nombre: ");
+        string Nombre = Console.ReadLine();
+        Console.WriteLine("SKU: ");
+        string SKU = Console.ReadLine();
+        Console.WriteLine("Descripcion: ");
+        string Descripcion = Console.ReadLine();
+        Console.WriteLine("Stock");
+        int Stock = Console.ReadLine();
+
+        AccesoriosCreados.Add(new Accesorio(Nombre, SKU, Descripcion, Stock));
+    }
     }

@@ -8,13 +8,20 @@ namespace ConsoleApp1
 {
     class Empresa: Cliente
     {
-        String Tipo;
-        String Autorizacion;
+        string Tipo;
+        string Autorizacion;
+        public List<Empresa> EmpresasAgregadas;
     }
     AgregarEmpresa()
     {
         base.CrearCliente();
-        Console.WriteLine("Tipo de Empresa a Ingresar (Empresa, Organización u Institución)"), 
-        Console.WriteLine("Estado de Autorización (Autorizada, Rechazada, Pendiente)"));
+        Console.WriteLine("Tipo de Empresa a Ingresar (Empresa, Organización u Institución)"); 
+        Console.WriteLine("Estado de Autorización (Autorizada, Rechazada, Pendiente)");
+        string ClaseLicencia = Console.ReadLine();
+
+        if (Tipo == "Emrpresa")
+        {
+            EmpresasAgregadas.Add(new Empresa(Tipo,Autorizacion));
+        }
     }
 }

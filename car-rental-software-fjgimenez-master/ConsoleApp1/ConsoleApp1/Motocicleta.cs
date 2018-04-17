@@ -1,21 +1,28 @@
 ﻿using System;
 
-public class Motocicleta : Vehiculo
+namespace ConsoleApp1
 {
-    public CrearMotocicleta()
+    public class Motocicleta : Vehiculo
     {
-        base.CrearVehiculo();
-    }
-
-    ArrendarMotocicleta()
-    {
-        if (Persona.ClaseLicencia == "C")
+        public CrearMotocicleta()
         {
-            base.Arrendar;
+            base.CrearVehiculo();
+            if (Tipo == "Motocicleta")
+            {
+                CrearVehiculo.Add(new Motocicleta(Marca, Modelo, Patente, Tipo, Año, Precio));
+            }
         }
-        else
+
+        ArrendarMotocicleta()
         {
-            Console.WriteLine("Usted no cuenta con la licencia necesaria para arrendar este vehículo");
+            if (Persona.ClaseLicencia == "C")
+            {
+                base.Arrendar;
+            }
+            else
+            {
+                Console.WriteLine("Usted no cuenta con la licencia necesaria para arrendar este vehículo");
+            }
         }
     }
 }

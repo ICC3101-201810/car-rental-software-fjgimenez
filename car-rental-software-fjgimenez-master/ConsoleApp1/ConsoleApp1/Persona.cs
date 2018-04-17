@@ -4,13 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
-    class Persona: Cliente
+namespace ConsoleApp1
+{
+    class Persona : Cliente
     {
-        String ClaseLicencia;
+        public List<Persona> PersonasAgregadas;
     }
-    AgregarPersona()
+    public AgregarPersona()
     {
-    base.CrearCliente();
-    Console.WriteLine("Clase de Licencia de Persona a Ingresar"));
+        base.CrearCliente();
+
+        Console.WriteLine("Clase de Licencia de Persona a Ingresar");
+        string ClaseLicencia = Console.ReadLine();
+
+        if (Tipo == "Persona")
+        {
+            PersonasAgregadas.Add(new Persona(ClaseLicencia));
+        }
+    }
 }

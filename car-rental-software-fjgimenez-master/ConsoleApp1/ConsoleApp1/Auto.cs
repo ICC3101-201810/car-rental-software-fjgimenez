@@ -1,21 +1,29 @@
 ﻿using System;
 
-public class Auto : Vehiculo
+namespace ConsoleApp1
 {
-    public CrearAuto()
+    public class Auto : Vehiculo
     {
-        base.CrearVehiculo();
-    }
-
-    ArrendarAuto()
-    {
-        if (Persona.ClaseLicencia == "Sin Licencia")
+        public List<Auto> AutosCreados;
+        public CrearAuto()
         {
-            Console.WriteLine("Usted no cuenta con la licencia necesaria para arrendar este vehículo");
+            base.CrearVehiculo();
+            if (Tipo == "Auto")
+            {
+                AutosCreados.Add(new Auto(Marca, Modelo, Patente, Tipo, Año, Precio));
+            }
         }
-        else
+
+        ArrendarAuto()
         {
-            base.Arrendar;
+            if (Persona.ClaseLicencia == "Sin Licencia")
+            {
+                Console.WriteLine("Usted no cuenta con la licencia necesaria para arrendar este vehículo");
+            }
+            else
+            {
+                base.Arrendar;
+            }
         }
     }
 }

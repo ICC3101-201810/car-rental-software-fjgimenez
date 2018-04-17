@@ -4,15 +4,31 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-   public class Sucursal
+namespace ConsoleApp1
+{
+    public class Sucursal
     {
-        String Nombre;
-        String Direccion;
-        String Ciudad;
+        string Nombre;
+        string Direccion;
+        string Ciudad;
+        public List<Sucursal> SucursalesCreadas;
     }
-    CrearSucursal()
+    public CrearSucursal(string Nombre, string Direccion, string Ciudad)
     {
-        Sucursal s1 = new Sucursal(Console.WriteLine("Nombre Sucursal a ingresar"), Console.WriteLine("Dirección de Sucursal a ingresar"),
-            Console.WriteLine("Ciudad de Sucursal a ingresar"));
+        Console.WriteLine("Necesitamos los siguientes datos:");
+        Console.WriteLine("Nombre Sucursal: ");
+        string Nombre = Console.ReadLine();
+        Console.WriteLine("Direccion Sucursal: ");
+        string Direccion = Console.ReadLine();
+        Console.WriteLine("Ciudad: ");
+        string Ciudad = Console.ReadLine();
+
+        SucursalesCreadas.Add(new Sucursal(Nombre, Direccion, Ciudad));
     }
-    
+    public VerSucursales(string Nombre)
+    {
+        Console.WriteLine("Seleccione Sucursal:");
+        SucursalesCreadas.Nombre;
+        string SucursalElegida = Console.ReadLine();
+    }
+}

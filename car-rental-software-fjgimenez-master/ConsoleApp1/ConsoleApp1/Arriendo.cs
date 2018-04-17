@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+namespace ConsoleApp1
+{
     abstract class Arriendo
     {
         int numero;
@@ -11,18 +13,21 @@ using System.Threading.Tasks;
     }
     DatosArriendo()
     {
-       Console.WriteLine("Arriendo Realizado a las" + dat);
+        Console.WriteLine("Arriendo Realizado a las" + dat);
 
-        if(Cliente.Equals=="Persona"){
+        if (Cliente.Equals == "Persona")
+        {
             Console.WriteLine("Arrendatario:" + Persona.Nombre);
-}
-        if(Cliente.Equals=="Persona"){
+        }
+        if (Cliente.Equals == "Persona")
+        {
             Console.WriteLine("Arrendatario:" + Empresa.Nombre + Empresa.Tipo);
-}
-        else{
+        }
+        else
+        {
             Console.WriteLine("Tipo de cliente no encontrado");
-}           
-        Console.WriteLine("\n Vehículo Arrendado:" + Vehiculo + "\n Retirar en Sucursal:"+ Sucursal);
+        }
+        Console.WriteLine("\n Vehículo Arrendado:" + Vehiculo + "\n Retirar en Sucursal:" + Sucursal);
         Console.WriteLine("\n Accesorios agregados" + Accesorio);
     }
 
@@ -35,12 +40,13 @@ using System.Threading.Tasks;
 
     AgregarAccesorios()
     {
-        Console.WriteLine("Accesorios Seleccionados Exitosamente! El total es de" + PrecioTotal + 
+        Console.WriteLine("Accesorios Seleccionados Exitosamente! El total es de" + PrecioTotal +
             "Elige medio de pago");
         Console.WriteLine("Pago realizado con Exito! Resumen de su arriendo:" + DatosArriendo);
     }
 
-     PrecioTotal()
+    PrecioTotal()
     {
-        Arrendar.get(Precio) + AgregarAccesorios.get(Precio); 
+        Arrendar.get(Precio) + AgregarAccesorios.get(Precio);
     }
+}
